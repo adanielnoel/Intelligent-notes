@@ -1,0 +1,25 @@
+{
+  "baseFontSize": 30,
+  "cssTheme": "Comfort color dark",
+  "translucency": false,
+  "enabledCssSnippets": [
+    "list_item_spacing",
+    "headers",
+    "theme_colors",
+    "emphasis",
+    "metatable",
+    "lists",
+    "supercharged_internal_links",
+    "tableStyles",
+    "tables",
+    "images",
+    "embeds",
+    "pdf_export",
+    "day_planner",
+    "footnotes",
+    "tasklists",
+    "page",
+    "quotes",
+    "horizontal_line_gradient"
+  ]
+}

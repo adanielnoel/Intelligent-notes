@@ -1,0 +1,17 @@
+
+.footnote-link {
+    margin-left: 2px !important;
+    font-size: 0.9em;
+}
+
+.footnotes {
+    font-size: 0.8em;
+}
+
+.footnotes > ol::before {
+    /* display: inline-block !important; */
+    /* position: absolute; */
+    content: "Footnotes";
+    font-size: 1.5em;
+    font-weight: 600;
+}

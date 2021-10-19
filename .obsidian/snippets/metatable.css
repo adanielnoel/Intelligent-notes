@@ -1,0 +1,39 @@
+.obsidian-metatable {
+    padding: 4px;
+    border-color: rgb(51, 51, 51);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    font-size: 0.5em !important;
+}
+
+.obsidian-metatable::part(key) {
+    background-color: #1e2122;
+}
+
+/* Tags */
+.obsidian-metatable::part(tag) {
+    background-color: rgba(56, 113, 179, 0.219);
+}
+
+/* Type tags */
+.obsidian-metatable::part(tag type\/fleeting),
+.obsidian-metatable::part(tag type\/literature),
+.obsidian-metatable::part(tag type\/permanent),
+.obsidian-metatable::part(tag type\/index),
+.obsidian-metatable::part(tag type\/keyword),
+.obsidian-metatable::part(tag type\/citation) {
+    background-color: #36393f83;
+    /* opacity: 0.3; */
+}
+
+/* Flag tags */
+.obsidian-metatable::part(tag flags\/no_source),
+.obsidian-metatable::part(tag flags\/incomplete),
+.obsidian-metatable::part(tag flags\/hypothetical),
+.obsidian-metatable::part(tag flags\/wip),
+.obsidian-metatable::part(tag flags\/publishable),
+.obsidian-metatable::part(tag flags\/published) {
+    background-color: rgba(189, 57, 160, 0.15);
+}

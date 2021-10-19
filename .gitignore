@@ -1,0 +1,27 @@
+**/.DS_Store
+
+# Ignore markdown files in root folder
+/*.md
+!/*README.md
+!/*problematic\ notes.md
+
+# Ignore subdirectories except the normal ones
+/*/
+!/.obsidian/
+!/.obsidian/**
+!/6\ Citation\ notes/
+!/6\ Citation\ notes/**
+!/5\ Keyword\ notes/
+!/5\ Keyword\ notes/**
+!/4\ Index\ notes/
+!/4\ Index\ notes/**
+!/3\ Permanent\ notes/
+!/3\ Permanent\ notes/**
+!/2\ Literature\ notes/
+!/2\ Literature\ notes/**
+!/1\ Fleeting\ notes/
+!/1\ Fleeting\ notes/**
+!/External\ files/
+!/External\ files/**
+!/Attachments/
+!/Attachments/**

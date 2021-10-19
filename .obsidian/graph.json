@@ -1,0 +1,65 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#type/literature",
+      "color": {
+        "a": 1,
+        "rgb": 4621050
+      }
+    },
+    {
+      "query": "tag:#type/permanent",
+      "color": {
+        "a": 1,
+        "rgb": 14702930
+      }
+    },
+    {
+      "query": "tag:#type/citation",
+      "color": {
+        "a": 1,
+        "rgb": 15661639
+      }
+    },
+    {
+      "query": "tag:#type/fleeting",
+      "color": {
+        "a": 1,
+        "rgb": 14701269
+      }
+    },
+    {
+      "query": "tag:#type/index",
+      "color": {
+        "a": 1,
+        "rgb": 5299380
+      }
+    },
+    {
+      "query": "tag:#type/keyword",
+      "color": {
+        "a": 1,
+        "rgb": 5299380
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 0.825992647058824,
+  "collapse-forces": true,
+  "centerStrength": 0.401654411764706,
+  "repelStrength": 10.8235294117647,
+  "linkStrength": 1,
+  "linkDistance": 330,
+  "scale": 0.32070805221936366,
+  "close": true
+}

@@ -1,0 +1,27 @@
+a.internal-link[data-link-tags*="type/fleeting"] {
+    color: rgb(224, 82, 213) !important;
+}
+
+a.internal-link[data-link-tags*="type/literature"] {
+    color: #4398c0 !important;
+}
+
+a.internal-link[data-link-tags*="type/permanent"] {
+    color: rgb(211, 90, 69) !important;
+}
+
+a.internal-link[data-link-tags*="type/index"],
+a.internal-link[data-link-tags*="type/keyword"] {
+    color: rgb(64, 177, 145) !important;
+    font-weight: 600;
+}
+
+a.internal-link[data-link-tags*="type/citation"] {
+    color: rgb(169, 179, 43) !important;
+}
+
+a.internal-link[data-link-tags*="cat/people"]::before {
+    content: "👤";
+    margin-right: 5px;
+    font-size: 0.9em;
+}

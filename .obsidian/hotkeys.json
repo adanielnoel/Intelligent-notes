@@ -1,0 +1,105 @@
+{
+  "zk-prefixer": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "Z"
+    }
+  ],
+  "insert-template": [],
+  "obsidian-hotkeys-for-templates:Default template.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "N"
+    }
+  ],
+  "obsidian-citation-plugin:open-literature-note": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "6"
+    },
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "O"
+    }
+  ],
+  "obsidian-hotkeys-for-templates:Literature note template.md": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "2"
+    }
+  ],
+  "obsidian-hotkeys-for-templates:Index note template.md": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "4"
+    }
+  ],
+  "obsidian-hotkeys-for-templates:Keyword note template.md": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "5"
+    }
+  ],
+  "obsidian-hotkeys-for-templates:Fleeting note template.md": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "1"
+    }
+  ],
+  "obsidian-hotkeys-for-templates:Permanent note template.md": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "3"
+    }
+  ],
+  "app:go-back": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "["
+    }
+  ],
+  "app:go-forward": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "]"
+    }
+  ],
+  "app:delete-file": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Backspace"
+    }
+  ]
+}

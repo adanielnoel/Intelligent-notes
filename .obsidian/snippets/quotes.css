@@ -1,0 +1,20 @@
+/* Background in edit mode*/
+.HyperMD-quote {
+    background-color: rgba(255, 255, 255, 0.034) !important;
+    border-left: solid 2px rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Normal text in quote */
+.markdown-preview-view blockquote,
+.cm-quote {
+    color: rgb(150, 148, 148) !important;
+}
+
+.cm-quote.cm-hmd-internal-link,
+.cm-quote.cm-formatting-link {
+    color: #59a2c5 !important;
+}
+
+.cm-inline-code.cm-quote {
+    color: var(--text-code) !important;
+}

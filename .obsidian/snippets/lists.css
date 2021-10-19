@@ -1,0 +1,160 @@
+/* ====== List spacing ======== */
+li {
+    margin-top: 0.5em;
+}
+
+li p {
+    margin-bottom: 0em;
+}
+
+li {
+    min-height: 1em; /* In case the item is empty */
+}
+
+/* Bring a list a bit closer to the paragraph before it, 
+   since it's usually a continuation of it */
+div > ul,
+div > ol {
+    margin-top: -5px !important;
+}
+
+/* ====== List indentation ======== */
+ul {
+    padding-left: 20px;
+}
+
+ol > li > ul {
+    margin-left: 20px;
+    /* padding-left: 20px; */
+}
+
+ul li.task-list-item {
+    margin-left: 20px;
+}
+
+ol {
+    margin-left: 5px;
+    padding-left: 0;
+}
+
+ol ol {
+    padding-left: 12px !important;
+}
+
+ol ol ol {
+    padding-left: 25px !important;
+}
+
+ol ol ol ol {
+    padding-left: 35px !important;
+}
+
+/* ====== List bullets ======== */
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1,
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-2,
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-3,
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-4,
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-5 {
+    color: transparent;
+}
+
+ul,
+ul ul,
+ul ul ul,
+ul ul ul ul,
+ol ul,
+ol ol ul,
+ol ol ol ul,
+ol ul ul,
+ol ul ul ul,
+ol ol ul ul {
+    list-style: none;
+    position: relative;
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1::before,
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-2::before,
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-3::before,
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-4::before,
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-5::before {
+    content: '➢';
+    color: rgb(100, 100, 100);
+}
+
+ul > li:before {
+    position: absolute;
+    display: inline-block;
+    content: '➢';
+    left: 0px;
+    color: rgb(100, 100, 100);
+}
+
+li.task-list-item::before {
+    left: 20px;
+}
+
+/* ====== Ordered list levels ======== */
+
+ol,
+ol ol,
+ol ol ol,
+ol ol ol ol {
+    font-weight: 200 !important;
+    counter-reset: item !important;
+}
+
+ol > li {
+    position: relative !important;
+    display: block !important;
+}
+
+ol > li:before {
+    content: counters(item, ".") ' .' !important;
+    counter-increment: item !important;
+    font-weight: 500 !important;
+    color: rgb(196, 124, 82);
+    margin-right: 8px !important;
+    /* background: rgba(79, 79, 79, 0.247);
+    box-shadow: 0 0 3px 1px rgba(79, 79, 79, 0.247);
+    border-radius: 3px; */
+    padding: 0 0 0 3px;
+}
+
+/* BULLET POINT RELATIONSHIP LINES */
+
+.cm-hmd-list-indent .cm-tab, ul ul {
+    position: relative; 
+}
+.cm-hmd-list-indent .cm-tab::before, ul ul::before {
+ content:'';
+ border-left: 1px solid rgb(51, 51, 51);
+ position: absolute;
+}
+.cm-hmd-list-indent .cm-tab::before { 
+    left: 4px; top: -9px; bottom: 2px; 
+}
+ul ul::before { 
+    left: -15px; top: -10px; bottom: 5px; 
+}
+
+ul .contains-task-list::before { 
+    left: -16px; top: -8px; bottom: 5px; 
+}
+
+/* Collapse icon (if enabled) */
+.CodeMirror-foldgutter-open.CodeMirror-guttermarker-subtle {
+    opacity: 0.2 !important;
+}
+.list-collapse-indicator.collapse-indicator.collapse-icon {
+    opacity: 0.2 !important;
+}
+
+.list-collapse-indicator.collapse-indicator.collapse-icon > svg {
+    margin-top: -5px !important;
+}
+
+/* disable collapsing sub-lists */
+li > ul > li > .list-collapse-indicator.collapse-indicator.collapse-icon {
+    display: none !important;
+}

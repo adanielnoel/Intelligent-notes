@@ -1,0 +1,39 @@
+{
+  "files": [
+    "Permanent note template.md",
+    "Index note template.md",
+    "Keyword note template.md",
+    "Literature note template.md",
+    "Fleeting note template.md"
+  ],
+  "templaterFiles": [],
+  "newFileTemplates": [
+    {
+      "folder": "1 Fleeting notes",
+      "path": "Fleeting note template.md",
+      "plugin": "core"
+    },
+    {
+      "folder": "2 Literature notes",
+      "path": "Literature note template.md",
+      "plugin": "core"
+    },
+    {
+      "folder": "3 Permanent notes",
+      "path": "Permanent note template.md",
+      "plugin": "core"
+    },
+    {
+      "folder": "4 Index notes",
+      "path": "Index note template.md",
+      "plugin": "core"
+    },
+    {
+      "folder": "5 Keyword notes",
+      "path": "Keyword note template.md",
+      "plugin": "core"
+    }
+  ],
+  "openNewFileTemplateInNewPane": true,
+  "useNewFileTemplateOnFileCreation": true
+}

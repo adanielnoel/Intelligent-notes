@@ -1,0 +1,50 @@
+.markdown-embed {
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.4), 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+    border: none !important;
+    padding: 0 !important;
+    margin: 10px 10px 20px 10px !important;
+    border-radius: 5px !important;
+}
+
+.markdown-embed-title {
+    color: #787c7c;
+    font-size: 1em;
+    padding: 2px 0 5px 15px !important;
+    height: auto;
+    line-height: normal;
+    text-align: left;
+    background: #2b2d31;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.markdown-embed-title::before {
+    content: '📄 ';
+}
+
+.markdown-embed-link {
+    top: 5px;
+    right: 6px;
+    opacity: 0.7;
+    color: #4398c0;
+}
+
+/* Hide metatable in embeds. It also affects hover previews */
+.markdown-embed .obsidian-metatable {
+    display: none;
+}
+
+/* Do show metatable in hover previews */
+/* .popover.hover-popover .obsidian-metatable {
+    display: block !important;
+} */
+
+.markdown-embed-content > .markdown-preview-view {
+    padding: 0px 10px 0px 10px !important;
+}
+
+/* Remove vertical space added by markdown-preview-sizer */
+div.markdown-preview-sizer.markdown-preview-section {
+    min-height: unset !important;
+    padding-bottom: 0 !important;
+}

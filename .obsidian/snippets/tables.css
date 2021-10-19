@@ -1,0 +1,47 @@
+/* --------------------------------------------   */
+/* Latex table-layout:                            */
+/* --------------------------------------------   */
+table thead tr th {
+	text-align: left;
+}
+
+table {
+	min-width: 30% !important;
+	border-collapse: separate !important;
+	border-radius: 5px !important;
+	background: rgba(151, 151, 151, 0.034) !important;
+	border-spacing: 0 !important;
+	width: auto !important;
+	overflow-x: auto !important	;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.274) !important;
+}
+th,
+td {
+	border: 0 none !important;
+	padding: 0.51rem !important;
+	line-height: 1.1 !important;
+}
+thead th {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.575) !important;
+	font-weight: bold !important;
+	color: rgb(190, 190, 190);
+    padding: 8px 9px 5px 9px !important;
+}
+tr:nth-child(even) {
+    background-color: #ebecf109 !important;
+}
+tbody tr:hover td {
+	background-color: #f5f1da !important;
+}
+table th:first-of-type{
+	border-top-left-radius: 6px !important;
+}
+table th:last-of-type{
+	border-top-right-radius: 6px !important;
+}
+table tr:last-child td:first-child {
+	border-bottom-left-radius: 5px !important;
+}
+table tr:last-child td:last-child {
+	border-bottom-right-radius: 5px !important;
+}

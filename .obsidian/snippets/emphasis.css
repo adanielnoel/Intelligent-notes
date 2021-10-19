@@ -1,0 +1,39 @@
+.cm-strong,
+.cm-quote.cm-strong,
+.markdown-preview-view strong {
+    font-weight: 900 !important;
+    color: rgb(216, 216, 216) !important;
+}
+
+.markdown-preview-view em,
+.cm-em,
+.cm-quote.cm-em {
+    font-weight: 400 !important;
+    color: rgb(216, 216, 216) !important;
+}
+
+.MJX-TEX {
+    color: rgb(216, 216, 216);
+}
+
+/* highlighted text
+.markdown-preview-view mark,
+.cm-highlight {
+    
+}
+*/
+
+/* ===== Formatting symbols ===== */
+
+.cm-formatting:not(.cm-formatting-list):not(.cm-formatting-task) {
+    opacity: 0.3 !important;
+}
+
+.cm-formatting-highlight,
+.cm-formatting-em,
+.cm-formatting-strong {
+    font-size: 0.8em !important;
+    vertical-align: middle !important;
+    background-color: transparent !important;
+    font-weight: bold !important;
+}

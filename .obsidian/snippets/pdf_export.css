@@ -1,0 +1,34 @@
+@media print {
+    /* remove frontmatter box if "Show frontmatter" was enabled */
+    /* Also remove metadata table from "Metatable" plugin */
+    pre.frontmatter,
+    .obsidian-metatable {
+      display: none;
+    }
+
+    strong {
+      color: black !important;
+      font-weight: 700 !important;
+    }
+
+    em {
+      color: black !important;
+    }
+
+    ol > li:before {
+      color: black !important;
+      margin-right: 8px !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      font-weight: 700 !important;
+    }
+
+    img {
+      border: 2px solid rgb(155, 155, 155) !important;
+      margin-bottom: 1em !important;
+    }
+
+    code {
+      color: rgb(214, 213, 213) !important;
+    }
+}

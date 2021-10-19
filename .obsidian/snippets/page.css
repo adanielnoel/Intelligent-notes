@@ -1,0 +1,6 @@
+.CodeMirror-lines,
+.CodeMirror-selected, 
+.markdown-preview-section {
+    max-width: 800px !important;
+    margin: auto !important;
+}

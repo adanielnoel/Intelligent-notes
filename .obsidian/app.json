@@ -1,0 +1,19 @@
+{
+  "attachmentFolderPath": "Attachments",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Notes",
+  "showFrontmatter": false,
+  "defaultViewMode": "source",
+  "promptDelete": false,
+  "readableLineLength": false,
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 60
+  },
+  "foldHeading": false,
+  "foldIndent": true,
+  "showLineNumber": false
+}

@@ -1,0 +1,11 @@
+/* Horizontal gradient line in Preview as per Obsidianite theme */
+.markdown-preview-view hr {
+  border-top: 1px solid rgb(94, 94, 94);
+}
+
+/* Setting the gap above and below a hor. line, incl. footnotes ……
+/* …… but footnotes can be set separately - see section Footnotes */
+div.markdown-preview-section hr {
+  margin-block-start: 40px;
+  margin-block-end: 20px;
+}
