@@ -2,7 +2,7 @@
   "citationExportFormat": "biblatex",
   "literatureNoteTitleTemplate": "@{{citekey}}",
   "literatureNoteFolder": "6 Citation notes",
-  "literatureNoteContentTemplate": "---\nkey: {{citekey}}\ntitle: {{title}}\nauthors: {{authorString}}\nyear: {{year}}\ntags: [notetype/citation]\n---\n\n**{{title}}**\n\n\n---\n## Notes citing this source:\n```dataviewjs\ndv.list(dv.current().file.inlinks)\n```\n",
+  "literatureNoteContentTemplate": "---\nkey: {{citekey}}\ntitle: {{title}}\nauthors: {{authorString}}\nyear: {{year}}\ntags: [type/citation]\n---\n\n**{{title}}**\n\n\n---\n## Notes citing this source:\n```dataviewjs\ndv.list(dv.current().file.inlinks)\n```\n",
   "markdownCitationTemplate": "[@{{citekey}}]",
   "alternativeMarkdownCitationTemplate": "@{{citekey}}",
   "citationExportPath": "External files/library.bib"

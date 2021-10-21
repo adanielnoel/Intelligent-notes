@@ -5,7 +5,7 @@ tags: [ type/keyword ]
 
 
 ---
-## Not indexed:
+### Not indexed:
 ```dataviewjs 
 var outlinks = dv.current().file.outlinks;
 var cat_tags = dv.current().file.etags.filter(tag => tag.contains('cat/'));

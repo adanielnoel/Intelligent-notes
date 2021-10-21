@@ -15,5 +15,6 @@
   },
   "foldHeading": false,
   "foldIndent": true,
-  "showLineNumber": false
+  "showLineNumber": false,
+  "trashOption": "local"
 }

@@ -13,10 +13,12 @@ li {
 
 /* Bring a list a bit closer to the paragraph before it, 
    since it's usually a continuation of it */
+/* 
 div > ul,
 div > ol {
     margin-top: -5px !important;
 }
+*/
 
 /* ====== List indentation ======== */
 ul {

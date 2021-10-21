@@ -5,7 +5,7 @@ tags: [ type/index ]
 
 
 ---
-## Not indexed:
+### Not indexed:
 ```dataviewjs 
 var outlinks = dv.current().file.outlinks;
 var idx_tags = dv.current().file.etags.filter(tag => tag.contains('idx/'));
@@ -21,8 +21,7 @@ if (missing_links.length === 0) {
 }
 ```
 
----
-## Sources
+### Sources
 ```dataviewjs
 var idx_tags = dv.current().file.etags.filter(tag => tag.contains('idx/'));
 var sources = dv.pages('#type/citation').filter(o => idx_tags.some(tag => o.file.etags.contains(tag)));
@@ -31,8 +30,7 @@ for (let i=0; i< sources.length; i++) {
 }
 ```
 
----
-## People
+### People
 ```dataviewjs
 var idx_tags = dv.current().file.etags.filter(tag => tag.contains('idx/'));
 var people_links = dv.pages('#cat/people').file.filter(f => idx_tags.some(tag => f.etags.contains(tag))).link

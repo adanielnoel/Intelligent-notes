@@ -15,7 +15,8 @@
   --text-link: #59a2c5;
   --text-a: #59a2c5;
   --text-a-hover: #b3a14b;
-  --text-mark: #e7a5221c;
+  --text-mark: #e0bd76;
+  --background-mark: #916f0023;
   --text-selection: rgba(238, 255, 0, 0.178);
   --text-code: rgb(196, 124, 82);
   --pre-code: #20283abd;
@@ -44,11 +45,23 @@ em {
   color: #b8cece;
 }
 
+/* ====== Highlights ====== */
 mark,
-.cm-highlight
+.cm-highlight /* Highlight in normal text */
 {
-  background-color: var(--text-mark) !important;
-  color: rgb(216, 216, 216) !important;
+    background-color: var(--background-mark) !important;
+    font-weight: 500 !important;
+    color: var(--text-mark) !important;
+}
+
+blockquote mark { /* Highlight inside a quote in read mode */
+    background-color: transparent !important;
+    font-weight: 500 !important;
+}
+
+.cm-highlight.cm-quote { /* Highlight inside a quote in edit mode */
+    background-color: transparent !important;
+    color: var(--text-mark) !important;
 }
 
 /**********************/
