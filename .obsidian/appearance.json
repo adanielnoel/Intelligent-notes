@@ -14,12 +14,12 @@
     "tables",
     "images",
     "embeds",
-    "pdf_export",
     "day_planner",
     "footnotes",
     "tasklists",
     "page",
     "quotes",
-    "horizontal_line_gradient"
+    "horizontal_line_gradient",
+    "pdf_export"
   ]
 }

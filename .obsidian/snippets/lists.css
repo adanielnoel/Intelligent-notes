@@ -86,7 +86,7 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-5::before {
 
 ul > li:before {
     position: absolute;
-    display: inline-block;
+    display: inline-block !important;
     content: '➢';
     left: 0px;
     color: rgb(100, 100, 100);
@@ -156,7 +156,16 @@ ul .contains-task-list::before {
     margin-top: -5px !important;
 }
 
+.task-list-item > .list-collapse-indicator.collapse-indicator.collapse-icon > svg {
+    margin-left: -20px !important;  /* Corrects horizontal distance when the item contains a checkbox*/
+}
+
 /* disable collapsing sub-lists */
 li > ul > li > .list-collapse-indicator.collapse-indicator.collapse-icon {
     display: none !important;
+}
+
+/* Fix some numbered lists that have the text on next line */
+li > p {
+    display: inline !important;
 }

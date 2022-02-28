@@ -11,10 +11,12 @@
     "pageSize": "A4",
     "landscape": false,
     "margin": "0",
-    "downscalePercent": 60
+    "downscalePercent": 75
   },
   "foldHeading": false,
   "foldIndent": true,
   "showLineNumber": false,
-  "trashOption": "local"
+  "trashOption": "local",
+  "legacyEditor": true,
+  "livePreview": false
 }

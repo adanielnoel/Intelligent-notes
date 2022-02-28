@@ -15,6 +15,16 @@ dv.list(notes.link)
 }
 ```
 
+### Notes marked with `#flags/wip`
+```dataviewjs
+var notes = dv.pages('#flags/wip').file;
+if (notes.length === 0) {
+dv.paragraph('`All good!`')
+} else {
+dv.list(notes.link)
+}
+```
+
 ### Notes without type
 ```dataviewjs
 var notes = dv.pages().file;
@@ -35,10 +45,12 @@ Notes that contain links to notes that are not created yet
 ---
 ## Literature and permanent notes
 ### Notes without an index
+(Excludes notes with tag `#flags/no_idx`)
 ```dataviewjs
 var notes = dv.pages("#type/literature or #type/permanent").file;
-notes = notes.filter((f) => f.folder != 'External files');
-notes = notes.filter((f) => !f.tags.some((t) => t.contains('#idx/')));
+notes = notes.filter(f => f.folder != 'External files');
+notes = notes.filter(f => !f.tags.some(t => t.contains('#idx/')));
+notes = notes.filter(f => !f.tags.some(t => t.includes('#flags/no_idx')));
 if (notes.length === 0) {
 dv.paragraph('- `All good!`')
 } else {
@@ -47,12 +59,12 @@ dv.list(notes.link)
 ```
 
 ### Literature notes without citations
-(Notes with the tag `#cat/people` or `#flags/no_source` are excluded)
+(Excludes notes with tag `#cat/people` or `#flags/no_source`)
 ```dataviewjs
 var notes = dv.pages("#type/literature").file;
-notes = notes.filter((f) => f.folder != 'External files');
-notes = notes.filter((f) => !f.outlinks.some((p) => p.path.contains('Citation notes/@')));
-notes = notes.filter((f) => !f.tags.some((t) => t.includes('#cat/people') || t.includes('#flags/no_source')));
+notes = notes.filter(f => f.folder != 'External files');
+notes = notes.filter(f => !f.outlinks.some((p) => p.path.contains('Citation notes/@')));
+notes = notes.filter(f => !f.tags.some((t) => t.includes('#cat/people') || t.includes('#flags/no_source')));
 if (notes.length === 0) {
 dv.paragraph('- `All good!`')
 } else {
@@ -61,12 +73,14 @@ dv.list(notes.link)
 ```
 
 ### Unused notes
-Literature and permanent notes which only appear on index and keyword notes (excl. notes with the tag `#cat/people`).
+Literature and permanent notes which only appear on index and keyword notes (excl. notes with the tags `#cat/people` and `#cat/essays`).
 ```dataviewjs
 var notes = dv.pages("#type/literature or #type/permanent").file;
-notes = notes.filter((f) => f.folder != 'External files');
-var notes = notes.filter(f => !f.inlinks.some(l => !l.path.contains("4 Index notes/") && !l.path.contains("5 Keyword notes/")));
-notes = notes.filter((f) => !f.tags.some((t) => t.includes('#cat/people')));
+notes = notes.filter(f => f.folder != 'External files');
+notes = notes.filter(f => !f.inlinks.some(l => !l.path.contains("4 Index notes/") && !l.path.contains("5 Keyword notes/")));
+notes = notes.filter(f => !f.tags.some((t) => t.includes('#cat/people')));
+notes = notes.filter(f => !f.tags.some((t) => t.includes('#cat/essays')));
 dv.list(notes.link);
 //dv.paragraph('`' + notes[0].inlinks[0] + '`')
 ```
+

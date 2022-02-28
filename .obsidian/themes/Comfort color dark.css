@@ -16,6 +16,7 @@
   --text-a: #59a2c5;
   --text-a-hover: #b3a14b;
   --text-mark: #e0bd76;
+  --text-math:    #c7525e;
   --background-mark: #916f0023;
   --text-selection: rgba(238, 255, 0, 0.178);
   --text-code: rgb(196, 124, 82);
@@ -62,6 +63,18 @@ blockquote mark { /* Highlight inside a quote in read mode */
 .cm-highlight.cm-quote { /* Highlight inside a quote in edit mode */
     background-color: transparent !important;
     color: var(--text-mark) !important;
+}
+
+/* ===== Math commands ===== */
+
+.cm-formatting-math {   /* Dollar sign */
+  font-family: var(--font-monospace) !important;
+  opacity: 0.6 !important;
+  font-weight: 100 !important;
+}
+
+.cm-math {
+  color: var(--text-math) !important;
 }
 
 /**********************/
@@ -263,6 +276,10 @@ img
 {
   font-family: var(--font-family-preview);
   font-size: 12px;
+}
+
+.workspace-leaf-resize-handle {
+  background-color: transparent !important;
 }
 
 /******************/

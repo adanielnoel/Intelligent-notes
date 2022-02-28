@@ -1,6 +1,5 @@
 [
   "obsidian-citation-plugin",
-  "sliding-panes-obsidian",
   "obsidian-hotkeys-for-templates",
   "obsidian-metatable",
   "obsidian-icons-plugin",
@@ -8,5 +7,7 @@
   "supercharged-links-obsidian",
   "table-editor-obsidian",
   "tag-wrangler",
-  "code-block-copy"
+  "code-block-copy",
+  "obsidian-dynamic-toc",
+  "sliding-panes-obsidian"
 ]
